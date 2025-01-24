@@ -78,6 +78,7 @@ df["HealthRisk"] = df.apply(health_risk, axis=1)
        plt.plot(patient_data["Date"], patient_data["DiastolicBP"], marker="o", label=f"Diastolic BP - Patient {patient_id}")
    plt.show()
    ```
+![Line Chart](https://github.com/prithadash/Data_analysis_task1/blob/main/Line%20Chart.png?raw=true)
 
 2. **Average BMI Bar Chart**:
    ```python
@@ -85,16 +86,16 @@ df["HealthRisk"] = df.apply(health_risk, axis=1)
    avg_bmi.plot(kind="bar", figsize=(10, 6), color="skyblue")
    plt.show()
    ```
-
+![Bar Chart](https://github.com/prithadash/Data_analysis_task1/blob/main/Bar%20Chart.png?raw=true)
 3. **Health Risk Distribution Pie Chart**:
    ```python
    risk_distribution = df["HealthRisk"].value_counts()
    risk_distribution.plot(kind="pie", autopct="%1.1f%%", figsize=(8, 8), startangle=140)
    plt.show()
-   ```
+  ```
 
 ---
-
+![Pie Chart](https://github.com/prithadash/Data_analysis_task1/blob/main/Pie%20Chart.png?raw=true)
 ## Visual Outputs
 1. **Trends in Health Metrics**: Line chart showing changes in heart rate, systolic, and diastolic blood pressure over time.
 2. **Average BMI**: Bar chart comparing the average BMI of different patients.
